@@ -1,0 +1,291 @@
+
+/* цвет текста основной #212121; */
+/* цвет текста вторичный #757575; */
+/* белый #ffffff; */
+/* акцент #2196F3 */
+/* фон(без акцента) #F5F4FA */
+
+/* img overlay */
+
+
+
+:root{
+ --primary-text-color:#757575;
+ --title-text-color:#212121;
+ --accent-text-color: #2196F3;
+ --primary-white-color:#ffffff;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{ 
+    background-color: #ffffff;
+    margin-left:10px;
+}
+header { 
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    width:1600px;
+ 
+}
+
+/* logo */
+.web {
+    color: #2196F3;
+    font-family: 'Raleway', sans-serif;
+    font-style: 400;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+.studio {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #000000;
+}
+.studio:hover{
+    color:#2196F3 ;
+}
+.link-up {
+    color: #757575;
+} 
+.link-up:hover,
+.link-up:focus{
+    color: #2196F3;
+}
+.link{
+    color: var(--title-text-color);
+}
+.link:hover,
+.link:focus{
+    color: #2196F3;
+}
+.site-nav .curent{
+    color: var(--accent-text-color);
+}
+.site-nav {
+    width:1600px;
+}
+    
+/* menu  */
+main {
+    background-color: #ffffff;
+    width:1600px;
+    font-family: 'Roboto',sans-serif;  
+}
+.baner{ 
+    background: #474858; 
+    height:600px; 
+    width:1600px;  
+}
+.baner-text{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    position: absolute;
+    width: 650px;
+    height: 120px;
+    left: 452px;
+    top: 280px;
+    color: var(--primary-white-color);
+}
+.baner-button{ 
+    color: var(--primary-white-color);
+    background-color: var(--accent-text-color);
+    position: absolute;
+    font-family: inherit;
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 530px;
+}
+
+/* quality part */
+.quality-text{
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color);   
+}
+.quality-discription{
+    height: 75px;
+    
+    width: 270px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.71;
+
+color: #757575;
+
+}
+/* .quality-img{
+    color: var(--primary-text-color);
+}
+.quality-img:hover,
+.quality-img:focus{
+    color: var(--accent-text-color);
+} */
+ /* .line {
+position: absolute;
+width: 1170px;
+height: 0px;
+left: 215px;
+top: 1119px; 
+border: 1px solid #ECECEC;
+} */
+
+/* what are we do */
+/* li out dot */
+ul{
+    list-style: none;
+}
+/* h1 in portfolio */
+.ghost{
+    display: none
+}
+
+/* what are we do product */
+
+/* h2 neme of section */
+.section-title{
+    color: var(--title-text-color);
+    font-family: Roboto;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+
+/* .product-title .product-text:hover,
+.product-title .product-text:focus{
+    
+} */
+.product-text{
+    background-color: #2F303A;
+    color: var(--primary-white-color);
+    width:370px;
+    height: 70px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;   
+}
+/* our team */
+.team{
+    background-color: #F5F4FA;
+}
+.title-styile{
+    color: var(--title-text-color);
+
+}
+/* .sosial-net{
+    color: var(--primary-text-color);
+}
+.sosial-net:hover,
+.sosial-net:focus{
+color:var(--accent-text-color) 
+} */
+
+/* footer */
+footer{
+    background-color: #2F303A;
+}
+
+.web-down{
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #2196F3;
+}
+.studio-down{
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #FFFFFF;
+}
+
+.address{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #FFFFFF;
+}
+ .link-down{
+    color: rgba(255, 255, 255, 0.6);
+}
+.wellcome-to{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height:1.42 ;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.subscribe-to{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height:1.42 ;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.button{ 
+    color: var(--primary-white-color);
+    background-color: var(--accent-text-color);
+    font-family: inherit;
+    width: 200px;
+    height: 50px;
+}
+
+/* PORTFLIO PAGE */
+/* main */
+/* цвет фона заставки 2196F3 */
+.button-menu{ 
+    color: var(--title-text-color);
+    background-color:#F5F4FA;
+    font-family: inherit;
+    width: 200px;
+    height: 50px;
+}
+.button-menu:hover,
+.button-menu:focus{
+    background-color: var(--accent-text-color);
+}
+.portfolio-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2.0;
+}
+.portfolio-text{
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 1.56;
+    text-indent: 20px;
+
+    color: var(--primary-white-color);
+    background: #2196F3;
+    width: 370px;
+    height: 294px;
+    left: 215px;
+    top: 262px;
+
+}
+.portfolio-link{
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.87;
+    color: #757575;
+}
