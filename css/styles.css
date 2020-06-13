@@ -15,19 +15,27 @@
  --primary-white-color:#ffffff;
 }
 
-html{
+ /* html{
     box-sizing: border-box;
+
 }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}   */
 
 body{ 
     background-color: #ffffff;
-    margin-left:10px;
+    margin: 0px;
+    
 }
 header { 
     font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
-    width:1600px;
+    
  
+    
 }
 
 /* logo */
@@ -37,8 +45,13 @@ header {
     font-style: 400;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.2;
-}
+    line-height: 1.2;  
+
+    padding-left: 215px;
+
+} 
+
+
 .studio {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -57,19 +70,21 @@ header {
 .link-up:focus{
     color: #2196F3;
 }
-.link{
+ .link {
     color: var(--title-text-color);
+    text-decoration: none;
 }
+
+
 .link:hover,
 .link:focus{
     color: #2196F3;
 }
-.site-nav .curent{
+.list .curent{
     color: var(--accent-text-color);
 }
-.site-nav {
-    width:1600px;
-}
+
+    
     
 /* menu  */
 main {
@@ -83,19 +98,49 @@ main {
     width:1600px;  
 }
 .baner-text{
-    font-weight: 900;
-    font-size: 44px;
+    font-weight: 900px;
+    font-size: 50px;
     line-height: 1.4;
     text-align: center;
     position: absolute;
-    width: 650px;
+    width: 690px;
     height: 120px;
-    left: 452px;
-    top: 280px;
+    margin-left: 450px;
+    margin-top: 200px;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: var(--primary-white-color);
 }
 .baner-button{ 
+
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 2;
+
+    display: flex;
+
+    position: absolute;
+    width: 140px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+    margin-left: 730px;
+    margin-top:440px ;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 2px solid #ffffff; 
     color: var(--primary-white-color);
+    background-color: var(--accent-text-color);
+    border-radius: 10px;
+
+    /* color: var(--primary-white-color);
     background-color: var(--accent-text-color);
     position: absolute;
     font-family: inherit;
@@ -103,6 +148,14 @@ main {
     height: 50px;
     left: 700px;
     top: 530px;
+    border: 2px solid #ffffff; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: Roboto; */
 }
 
 /* quality part */
@@ -195,6 +248,8 @@ color:var(--accent-text-color)
 /* footer */
 footer{
     background-color: #2F303A;
+    width: 1600px;
+    height: 250px;
 }
 
 .web-down{
@@ -217,11 +272,13 @@ footer{
     font-size: 14px;
     line-height: 1.7;
     color: #FFFFFF;
+
+    
 }
  .link-down{
     color: rgba(255, 255, 255, 0.6);
 }
-.wellcome-to{
+.come-to-us{
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -229,6 +286,7 @@ footer{
     line-height:1.42 ;
     text-transform: uppercase;
     color: #FFFFFF;
+
 }
 .subscribe-to{
     font-family: Roboto;
@@ -239,12 +297,26 @@ footer{
     text-transform: uppercase;
     color: #FFFFFF;
 }
+.subscribe-text{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.sub-zone{
+    width: 360px;
+    height: 50px;
+    border: 2px solid #FFFFFF;
+    background-color:  #2F303A;
+    border-radius: 10px; 
+}
 .button{ 
     color: var(--primary-white-color);
     background-color: var(--accent-text-color);
     font-family: inherit;
     width: 200px;
     height: 50px;
+    border-radius: 10px; 
+    margin-left: 10px;
+    border: 2px solid #FFFFFF;
 }
 
 /* PORTFLIO PAGE */
@@ -288,3 +360,82 @@ footer{
     line-height: 1.87;
     color: #757575;
 }
+
+/* РАСПОЛОЖЕНИЕ НА СТРАНИЦЕ */
+/* heder */
+.site-nav-content,  
+.site-nav-main, 
+.site-contacts {
+    display: flex;
+    
+} 
+.site-nav-item:not(:last-child){
+    margin-right: 50px;
+}
+
+.link-contacts{
+    margin-right: 50px;
+}
+
+.site-nav-item
+.site-contacts{
+    line-height: 80px;
+     
+}
+
+.site-nav-content {
+    align-items: center;
+}
+
+.site-nav-main {
+    margin-left: 70px;
+    
+}
+
+.site-contacts{
+    margin-left: 330px;
+    padding-left: 0px;
+}
+
+/* mein */
+/* baner */
+
+
+
+/* footer */
+
+.side-footer-conteiner,
+.list-social-network,
+.sub-zone-conteiner{
+    display: flex;
+
+}
+.addres-conteiner{
+    margin-left:215px;
+    margin-top: 45px;
+}
+.wellcome-to-conteiner{
+    margin-left: 150px;
+    margin-top: 57px;
+}
+.list-social-network{
+    padding-left: 0px;
+}
+.subscribe-to-conteiner{
+    margin-left: 155px;
+    margin-top: 57px;
+    
+}  
+.side-footer-conteiner{
+    align-items: top;
+}
+.sub-zone-conteiner{
+    align-items: center;
+}
+.disigner-info{
+    text-align: center; 
+} 
+/* .come-to-us{
+    
+}
+ */
