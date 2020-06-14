@@ -159,23 +159,27 @@ main {
 }
 
 /* quality part */
+.quality{
+    height: 270px;
+}
 .quality-text{
     font-family: 'Roboto';
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.2;
     text-transform: uppercase;
-    color: var(--title-text-color);   
+    color: var(--title-text-color);
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 .quality-discription{
     height: 75px;
-    
-    width: 270px;
+    width: 260px;
     font-family: Roboto;
     font-size: 14px;
     line-height: 1.71;
-
-color: #757575;
-
+    color: #757575;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 /* .quality-img{
     color: var(--primary-text-color);
@@ -211,7 +215,7 @@ ul{
     font-family: Roboto;
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
+    
 }
 
 
@@ -227,14 +231,44 @@ ul{
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    text-align: center;   
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 25px;
+    padding-bottom: auto;
 }
 /* our team */
 .team{
     background-color: #F5F4FA;
+    width: 1600;
+    height: 700px;
 }
 .title-styile{
     color: var(--title-text-color);
+    margin-top: 30px;
+    margin-bottom: 0px;
+
+}
+h4 {
+    color: var(--primary-text-color);
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.link-social-network-team{
+    background-color:#ffffff;
+   
+    width: 44px;
+    height: 40px;
+    
+    border-radius: 20px; 
+    margin-left: 10px;
+    margin-top: 5px;
+
+    /* border: 2px solid aqua; */
+}
+.link-social-network-team:hover,
+.link-social-network-team:focus{
+    background-color:var(--accent-text-color);
 
 }
 /* .sosial-net{
@@ -275,8 +309,8 @@ footer{
 
     
 }
- .link-down{
-    color: rgba(255, 255, 255, 0.6);
+.link-down{
+    color: #757575;
 }
 .come-to-us{
     font-family: Roboto;
@@ -399,8 +433,141 @@ footer{
 
 /* mein */
 /* baner */
+/* quality part */
+.quality-conteiner{
+    display: flex;
+    margin-left: 215px;
+    margin-top: 95px;
+    margin-bottom: 0px;
+}
+.quality-link{
+    background-color:#F5F4FA;
+   
+    width: 270px;
+    height: 120px;
+    
+    border-radius: 10px; 
+    margin-left: 10px;
+    border: 2px solid var(--primary-white-color);
+}
+.quality-link:hover,
+.quality-link:focus{
+    background-color:var(--accent-text-color);
+    border-color:var(--primary-text-color) ;
+}
+.quality-link:not(:last-child){
+    margin-right: 30px;
+    margin-left: 0px;
+}
+.quality-text{
+    margin-top: 55px;
+    margin-bottom: 0px;
+}
+.quality-img{
+    margin-top: 25px;
+    margin-left: 100px;
+    margin-bottom: 25px;
+}
+
+/* product part */
+.product-part-conteiner{
+    height: 580px;
+    /* border-bottom: 95px; */
+}
+.section-title{
+    text-align: center;
+    margin-top: 95px;
+    margin-bottom: 0px;
+}
+.section-title-team{
+    text-align: center;
+    padding-top: 95px;
+    margin-bottom: 0px;
+}
+.product-part-list{
+    display: flex;
+    margin-left: 215px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.product-part-link:not(:last-child){
+    margin-right:30px;
+    margin-left: 0px;
+}
+
+/* team-part */
+
+.list-social-network-team,
+.team-list{
+    display: flex;
+    
+}
+
+.team-list{
+    margin-left: 215px;
+    margin-top: 50px;
+    
+}
+.team-link{
+    width: 270px; 
+    height: 420px;
+    background-color: #ffffff; 
+}
+
+.team-link:not(:last-child){
+    margin-right: 30px;
+    
+}
+.title-styile, h4{
+    text-align: center;
+}
+.list-social-network-team{
+    padding-left: 20px; 
+    margin-top: 0px;
+    
+}
+
+/* customers */
+.list-customers{
+    display: flex;
+    margin-left: 215px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}   
+.link-customers{
+    
+    background-color:#F5F4FA;
+   
+    width: 170px;
+    height: 90px;
+    
+    border-radius: 10px; 
+    
+    border: 2px solid var(--primary-text-color);
 
 
+    margin-top: 50px;
+    
+}
+.link-customers:not(:last-child){
+    margin-right: 30px;
+}
+
+.customers-conteiner{
+    width: 1600px;
+    height: 275px;
+}
+.customers-img{
+    margin-left: 50px;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: auto;
+}
+.link-customers:hover,
+.link-customers:focus{
+    border-color:var(--accent-text-color);
+}
 
 /* footer */
 
@@ -435,6 +602,8 @@ footer{
 .disigner-info{
     text-align: center; 
 } 
+
+ 
 /* .come-to-us{
     
 }
