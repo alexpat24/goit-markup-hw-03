@@ -137,8 +137,10 @@ main {
     padding-right: 32px;
     border: 2px solid #ffffff; 
     color: var(--primary-white-color);
-    background-color: var(--accent-text-color);
+    background-color: var(--primary-text-color);
     border-radius: 10px;
+
+   
 
     /* color: var(--primary-white-color);
     background-color: var(--accent-text-color);
@@ -157,7 +159,10 @@ main {
     line-height: 1.4;
     font-family: Roboto; */
 }
-
+.baner-button:hover,
+.baner-button:focus{
+    background-color:var(--accent-text-color);
+}
 /* quality part */
 .quality{
     height: 270px;
@@ -181,6 +186,7 @@ main {
     margin-top: 10px;
     margin-bottom: 0px;
 }
+
 /* .quality-img{
     color: var(--primary-text-color);
 }
@@ -210,8 +216,7 @@ ul{
 /* what are we do product */
 
 /* h2 neme of section */
-.section-title,
-.section-title-team{
+.section-title {
     color: var(--title-text-color);
     font-family: Roboto;
     font-size: 36px;
@@ -237,6 +242,7 @@ ul{
     margin-bottom: 0px;
     padding-top: 25px;
     padding-bottom: auto;
+    
 }
 /* our team */
 .team{
@@ -489,6 +495,11 @@ footer{
     text-align: center;
     padding-top: 95px;
     margin-bottom: 0px;
+    
+    color: var(--title-text-color);
+    font-family: Roboto;
+    font-size: 36px;
+    line-height: 1.17;
 }
 .product-part-list{
     display: flex;
@@ -607,7 +618,7 @@ footer{
 }
 .social-network-item:hover,
 .social-network-item:focus{
-    border-color:var(--accent-text-color);
+    background-color: var(--accent-text-color);
 
 }
 
@@ -680,3 +691,6 @@ footer{
     padding-left: 10px;
 }
 
+.product-title{
+    text-decoration: none;
+}
