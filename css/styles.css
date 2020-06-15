@@ -394,7 +394,7 @@ footer{
     color: #ffffff00;
     background: rgba(33, 149, 243, 0);
     width: 310px;
-    height: 260px;
+    height: 264px;
     left: 215px;
     top: 262px;
     padding-right: 30px;
@@ -686,7 +686,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    margin-top: -390px;
+    margin-top: -388px;
    
 }
 .portfolio-title, .portfolio-link{
@@ -696,8 +696,7 @@ footer{
 .product-title{
     text-decoration: none;
 }
-/* .portfolio-text-conteiner:hover,
-.portfolio-text-conteiner:focus, */
+
 .portfolio-text:hover,
 .portfolio-text:focus{
     color: var(--primary-white-color);
