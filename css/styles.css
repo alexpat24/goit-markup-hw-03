@@ -210,7 +210,8 @@ ul{
 /* what are we do product */
 
 /* h2 neme of section */
-.section-title{
+.section-title,
+.section-title-team{
     color: var(--title-text-color);
     font-family: Roboto;
     font-size: 36px;
