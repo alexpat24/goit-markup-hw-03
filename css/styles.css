@@ -292,7 +292,7 @@ color:var(--accent-text-color)
 footer{
     background-color: #2F303A;
     width: 1600px;
-    height: 250px;
+    /* height: 250px; */
 }
 
 .web-down{
@@ -543,8 +543,7 @@ footer{
     margin-top: 50px;
     padding-left: 0;
     margin-bottom: 0;
-    padding-bottom: 95px;
-    
+    padding-bottom: 95px;   
 }
 .team-link{
     width: 270px; 
@@ -625,7 +624,7 @@ footer{
     margin-top: 45px;
 }
 .wellcome-to-conteiner{
-    margin-left: 150px;
+    margin-left: auto;
     margin-top: 57px;
 }
 .list-social-network{
@@ -649,9 +648,9 @@ footer{
 }
 
 .subscribe-to-conteiner{
-    margin-left: 155px;
+    margin-left: auto;
     margin-top: 57px;
-    
+    margin-right: 215px;
 }  
 .side-footer-conteiner{
     align-items: top;
@@ -661,6 +660,9 @@ footer{
 }
 .disigner-info{
     text-align: center; 
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 30px;
 } 
 
 /* PORTFOLIO */
