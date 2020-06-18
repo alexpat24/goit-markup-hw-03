@@ -164,9 +164,9 @@ main {
     background-color:var(--accent-text-color);
 }
 /* quality part */
-.quality{
-    height: 270px;
-}
+/* .quality{
+   height: 270px;
+} */
 .quality-text{
     font-family: 'Roboto';
     font-size: 14px;
@@ -185,6 +185,7 @@ main {
     color: #757575;
     margin-top: 10px;
     margin-bottom: 0px;
+    
 }
 
 /* .quality-img{
@@ -216,7 +217,8 @@ ul{
 /* what are we do product */
 
 /* h2 neme of section */
-.section-title {
+.section-title,
+.section-title-conteiner {
     color: var(--title-text-color);
     font-family: Roboto;
     font-size: 36px;
@@ -248,7 +250,7 @@ ul{
 .team{
     background-color: #F5F4FA;
     width: 1600;
-    height: 700px;
+   
 }
 .title-styile{
     color: var(--title-text-color);
@@ -411,6 +413,10 @@ footer{
 
 /* РАСПОЛОЖЕНИЕ НА СТРАНИЦЕ */
 /* heder */
+.side-header-conteiner{
+    width: 1600px;
+}
+
 .site-nav-content,  
 .site-nav-main, 
 .site-contacts {
@@ -437,12 +443,14 @@ footer{
 
 .site-nav-main {
     margin-left: 70px;
+    padding-left: 0;
     
 }
 
 .site-contacts{
-    margin-left: 330px;
+    margin-left: auto;
     padding-left: 0px;
+    margin-right: 215px;
 }
 
 /* mein */
@@ -450,15 +458,18 @@ footer{
 /* quality part */
 .quality-conteiner{
     display: flex;
-    margin-left: 215px;
-    margin-top: 95px;
+    padding-left: 215px;
+    padding-top: 95px;
     margin-bottom: 0px;
+    margin-top: 0;
+  
 }
+
 .quality-link{
-    background-color:#F5F4FA;
+    /* background-color:#F5F4FA; */
    
     width: 270px;
-    height: 120px;
+    /* height: 120px; */
     
     border-radius: 10px; 
     margin-left: 10px;
@@ -474,9 +485,10 @@ footer{
     margin-left: 0px;
 }
 .quality-text{
-    margin-top: 55px;
+    margin-top: 30px;
     margin-bottom: 0px;
 }
+
 .quality-img{
     margin-top: 25px;
     margin-left: 100px;
@@ -484,19 +496,21 @@ footer{
 }
 
 /* product part */
-.product-part-conteiner{
-    height: 580px;
-    /* border-bottom: 95px; */
-}
+/* .product-part-conteiner{
+     height: 580px; 
+     border-bottom: 95px; 
+} */
 .section-title{
     text-align: center;
-    margin-top: 95px;
+    padding-top: 95px;
     margin-bottom: 0px;
+    margin-top: 0;
 }
 .section-title-team{
     text-align: center;
     padding-top: 95px;
     margin-bottom: 0px;
+    margin-top: 0;
     
     color: var(--title-text-color);
     font-family: Roboto;
@@ -508,6 +522,8 @@ footer{
     margin-left: 215px;
     margin-top: 50px;
     margin-bottom: 0px;
+    padding-left: 0;
+    padding-bottom: 75px;
 }
 .product-part-link:not(:last-child){
     margin-right:30px;
@@ -515,7 +531,7 @@ footer{
 }
 
 /* team-part */
-
+.team 
 .list-social-network-team,
 .team-list{
     display: flex;
@@ -525,6 +541,9 @@ footer{
 .team-list{
     margin-left: 215px;
     margin-top: 50px;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 95px;
     
 }
 .team-link{
@@ -550,16 +569,16 @@ footer{
 .list-customers{
     display: flex;
     margin-left: 215px;
-    padding-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
+    padding-left: 0px;
+    padding-bottom: 95px;
 }   
 .link-customers{
     
     background-color:#F5F4FA;
    
     width: 170px;
-    height: 90px;
     
     border-radius: 10px; 
     
@@ -572,10 +591,15 @@ footer{
 .link-customers:not(:last-child){
     margin-right: 30px;
 }
-
+.section-title-conteiner{
+    padding-top: 115px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
 .customers-conteiner{
     width: 1600px;
-    height: 275px;
+    
 }
 .customers-img{
     margin-left: 50px;
@@ -643,11 +667,12 @@ footer{
 
 .list-button-menu{
     display: flex;
-    margin-left: 395px;
-    margin-top: 95px;
+    padding-left: 395px;
+    padding-top: 95px;
+    padding-bottom: 50px;
     margin-right: 0px;
-    margin-bottom: 50px;
-
+    margin-bottom: 0px;
+    margin-top: 0;
 }
 /* .link-buton-menu{} */
 
@@ -661,6 +686,7 @@ footer{
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 215px;
+    padding-bottom: 60px;
 }
 
 .portfolio-item{
@@ -675,9 +701,9 @@ footer{
     margin-right: 0px;
 }
 
-.portfolio-item:last-child{
+/* .portfolio-item:last-child{
     margin-bottom: 90px;
-}
+} */
 .portfolio-text:nth-child(3n){
     margin-right: 0px;
 }    
