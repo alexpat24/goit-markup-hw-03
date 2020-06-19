@@ -620,8 +620,8 @@ footer{
 
 }
 .addres-conteiner{
-    margin-left:215px;
-    margin-top: 45px;
+    padding-left:215px;
+    padding-top: 45px;
 }
 .wellcome-to-conteiner{
     margin-left: auto;
@@ -649,8 +649,8 @@ footer{
 
 .subscribe-to-conteiner{
     margin-left: auto;
-    margin-top: 57px;
-    margin-right: 215px;
+    padding-top: 57px;
+    padding-right: 215px;
 }  
 .side-footer-conteiner{
     align-items: top;
