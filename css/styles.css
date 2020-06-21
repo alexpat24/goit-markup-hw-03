@@ -62,11 +62,14 @@ header {
 .studio:hover{
     color:#2196F3 ;
 }
-.link-up {
+.link-up-mail,.link-up-phone {
+    display: inline-flex;
+    align-items:center;
     color: #757575;
+    
 } 
-.link-up:hover,
-.link-up:focus{
+.link-up-mail:hover,.link-up-phone:hover,
+.link-up-mail:focus,.link-up-phone:focus{
     color: #2196F3;
 }
  .link {
@@ -91,11 +94,8 @@ main {
     width:1600px;
     font-family: 'Roboto',sans-serif;  
 }
-.baner{ 
-    background: #474858; 
-    height:600px; 
-    width:1600px;  
-}
+
+   
 .baner-text{
     font-weight: 900px;
     font-size: 50px;
@@ -350,17 +350,24 @@ footer{
     background-color:  #2F303A;
     border-radius: 10px; 
 }
-.button{ 
-    color: var(--primary-white-color);
-    background-color: var(--accent-text-color);
-    font-family: inherit;
-    width: 200px;
-    height: 50px;
-    border-radius: 10px; 
-    margin-left: 10px;
-    border: 2px solid #FFFFFF;
-}
+.footer-button{ 
+    display: inline-flex;
+    align-items:center;
 
+    color: var(--primary-white-color);
+    background-color: var(--primary-text-color);
+    font-family: inherit;
+    padding-left: 50px;
+    width: 200px;
+    height: 55px;
+    border-radius: 10px; 
+    /* padding-left: 30px; */
+    margin: 0px;    
+}
+.footer-button:hover,
+.footer-button:focus{
+     background-color: var(--accent-text-color);
+}
 /* PORTFLIO PAGE */
 /* main */
 
@@ -627,7 +634,7 @@ footer{
     margin-left: 50px;
     margin-right: auto;
     margin-top: 20px;
-    margin-bottom: auto;
+    margin-bottom: auto; 
 }
 .link-customers:hover,
 .link-customers:focus{
@@ -771,4 +778,47 @@ footer{
 .portfolio-text:focus{
     color: var(--primary-white-color);
     background: rgb(33, 150, 243, 0.5);
+}
+
+/* установка иконок и background-img */
+
+.baner{
+    background: #474858;  
+    height:600px; 
+    max-width: 1600px;  
+    margin-right: auto;
+    margin-left: auto; 
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 49, 0.8)),
+    url(../img/bg-img.jpg);
+    /* background-image: linear-gradient(rgba(54, 54, 51, 0.9),
+     rgba(33, 150, 243, 0.7)), */
+    
+}
+.link-up-mail::before{
+    content:"";
+    width:14px;
+    height:11px;
+    margin-right: 5px;
+    background-image: url(../img/top-line-bg.svg);
+    background-size: contain;
+}
+.link-up-phone::before{
+    content:"";
+    width:7px;
+    height:11px;
+    margin-right: 5px;
+    background-image: url(../img/smartphone.svg);
+    background-size: contain;
+}
+
+.footer-button::after{
+    content:"";
+    
+    width:24px;
+    height:24px;
+    margin-left:20px;
+    background-image:url(../img/footer-airplain.svg);
+    background-size: contain;
+    
 }
