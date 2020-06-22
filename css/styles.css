@@ -33,9 +33,16 @@ body{
 header { 
     font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
-     
-    
 }
+ /*доп класс для ширины контента  */
+.width-conteiner{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 
 /* logo */
 .web {
@@ -420,11 +427,12 @@ footer{
 
 /* РАСПОЛОЖЕНИЕ НА СТРАНИЦЕ */
 /* heder */
-.side-header-conteiner{
+/* .side-header-conteiner{
     width:1170px;
     padding-left: 215px;
-    padding-right: 215px;
-}
+    padding-right:215px; 
+    
+}*/
 
 .site-nav-content,  
 .site-nav-main, 
@@ -466,11 +474,7 @@ footer{
 /* baner */
 /* quality part */
 .quality{ 
-    padding-left: 215px;
     padding-top: 95px;
-    padding-right: 215px;
-    
-    
 }
 .quality-conteiner{
     display: flex;
@@ -519,10 +523,7 @@ footer{
 } */
 .product-part-conteiner{
   padding-top: 95px;
-  padding-bottom: 95px;
-  padding-left: 215px;
-  padding-right: 215px;
-    
+  padding-bottom: 95px;   
 }
 .section-title{
     text-align: center;
@@ -556,9 +557,8 @@ footer{
 .team{
     padding-top: 95px;
     padding-bottom: 95px;
-    padding-left: 215px;
-    padding-right: 215px;
-
+    /* padding-left: 215px;
+    padding-right: 215px; */
 }
 .team 
 .list-social-network-team,
@@ -619,17 +619,11 @@ footer{
     margin-top: 0;
 }
 .customers-conteiner{
-    /* padding-top: 115px; */
-    width: 1170px;
     padding-top: 95px;
     padding-bottom: 95px;
-    padding-left: 215px;
-    padding-right: 215px;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
     
 }
+
 .customers-img{
     margin-left: 50px;
     margin-right: auto;
@@ -708,7 +702,7 @@ footer{
 }
 .buton-conteiner{
     padding-left: 395px;
-    padding-right: 395px;
+    padding-right: 395px; 
     
 }
 .list-button-menu{
@@ -724,8 +718,7 @@ footer{
 
 /* Porfolio-zone */
 .portfolio-conteiner{
-    padding-left: 215px;
-    padding-right: 215px;
+
     padding-top: 50px;
     padding-bottom: 60px;
 }
