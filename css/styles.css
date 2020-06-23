@@ -507,13 +507,16 @@ footer{
 /* quality part */
 .quality{ 
     padding-top: 95px;
+    padding-bottom: 95px;
+    border-bottom: 1px solid var(--primary-text-color);
 }
 .quality-conteiner{
-    display: flex;
     margin-bottom: 0px;
     margin-top: 0;
     padding-left: 0;
-  
+
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -533,10 +536,6 @@ footer{
     background-color:var(--accent-text-color);
     border-color:var(--primary-text-color) ;
 }
-.quality-link:not(:last-child){
-    margin-right: 30px;
-    margin-left: 0px;
-}
 
 .quality-img{
     margin-top: 25px;
@@ -551,7 +550,7 @@ footer{
 } */
 .product-part-conteiner{
   padding-top: 95px;
-  padding-bottom: 95px;   
+  padding-bottom: 75px;   
 }
 
 .section-title-team{
@@ -570,18 +569,13 @@ footer{
     margin-top: 50px;
     margin-bottom: 0px;
     padding-left: 0;
-    padding-bottom: 75px;
-}
-.product-part-link:not(:last-child){
-    margin-right:30px;
-    margin-left: 0px;
+    
+    justify-content: space-between;
 }
 
 /* team-part */
 
-.team 
-.list-social-network-team,
-.team-list{
+.list-social-network-team{
     display: flex;
     justify-content: center;
 }
@@ -591,19 +585,15 @@ footer{
     padding-left: 0;
     margin-bottom: 0;
     
-
-       
+    display: flex;
+    justify-content: space-between;
 }
+
 .team-link{
     width: 270px; 
     height: 420px;
     background-color: #ffffff; 
-    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
-}
-
-.team-link:not(:last-child){
-    margin-right: 30px;
-    
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);    
 }
 .list-social-network-team{
     padding-left: 20px; 
@@ -699,8 +689,9 @@ footer{
     text-align: center; 
     margin-top: 0;
     margin-bottom: 0;
-    
-    border-top: 1px solid #000;
+    padding-top: 20px;
+
+    border-top: 1px solid var(--primary-text-color);
 } 
 
 /* PORTFOLIO */
@@ -785,10 +776,9 @@ footer{
 
 /* установка иконок и background-img */
 
-.baner{
-    background: #474858;  
+.baner{ 
     height:600px; 
-    /* max-width: 1600px;   */
+    max-width: 1600px;
     margin-right: auto;
     margin-left: auto; 
     background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 49, 0.8)),
