@@ -41,6 +41,7 @@ header {
     width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
+    
 }
 
 
@@ -98,13 +99,11 @@ header {
 /* menu  */
 main {
     background-color: #ffffff;
-    width:1600px;
     font-family: 'Roboto',sans-serif;  
 }
 
    
 .baner-text{
-    font-weight: 900px;
     font-size: 50px;
     line-height: 1.4;
     text-align: center;
@@ -230,6 +229,10 @@ ul{
     font-size: 36px;
     line-height: 1.17;
     
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0;
+
 }
 
 
@@ -255,19 +258,26 @@ ul{
 /* our team */
 .team{
     background-color: #F5F4FA;
-    width: 1600;
+
+    padding-top: 95px;
+    padding-bottom: 95px;
+    /* width: 1600; */
    
 }
 .title-styile{
     color: var(--title-text-color);
     margin-top: 30px;
     margin-bottom: 0px;
+    
+    text-align: center;
 
 }
 h4 {
     color: var(--primary-text-color);
     margin-top: 10px;
     margin-bottom: 0px;
+
+    text-align: center;
 }
 .link-social-network-team{
     background-color:#ffffff;
@@ -297,9 +307,15 @@ color:var(--accent-text-color)
 /* footer */
 footer{
     background-color: #2F303A;
-    width: 1170px;
+    /* width: 1170px; */
     /* height: 250px; */
+
+    padding-left:215px;
+    padding-top: 45px;
+    padding-right: 215px;
+    padding-bottom: 30px;
 }
+
 
 .web-down{
     font-family: Raleway;
@@ -375,6 +391,18 @@ footer{
 .footer-button:focus{
      background-color: var(--accent-text-color);
 }
+
+.footer-button::after{
+    content:"";
+    
+    width:24px;
+    height:24px;
+    margin-left:20px;
+    background-image:url(../img/footer-airplain.svg);
+    background-size: contain;
+    
+}
+
 /* PORTFLIO PAGE */
 /* main */
 
@@ -400,6 +428,8 @@ footer{
     font-weight: bold;
     font-size: 18px;
     line-height: 2.0;
+
+    padding-left: 10px;
 }
 .portfolio-text{
     font-family: Roboto;
@@ -423,6 +453,8 @@ footer{
     font-size: 16px;
     line-height: 1.87;
     color: #757575;
+
+    padding-left: 10px;
 }
 
 /* РАСПОЛОЖЕНИЕ НА СТРАНИЦЕ */
@@ -505,10 +537,6 @@ footer{
     margin-right: 30px;
     margin-left: 0px;
 }
-.quality-text{
-    margin-top: 30px;
-    margin-bottom: 0px;
-}
 
 .quality-img{
     margin-top: 25px;
@@ -525,11 +553,7 @@ footer{
   padding-top: 95px;
   padding-bottom: 95px;   
 }
-.section-title{
-    text-align: center;
-    margin-bottom: 0px;
-    margin-top: 0;
-}
+
 .section-title-team{
     text-align: center;
     margin-bottom: 0px;
@@ -554,38 +578,32 @@ footer{
 }
 
 /* team-part */
-.team{
-    padding-top: 95px;
-    padding-bottom: 95px;
-    /* padding-left: 215px;
-    padding-right: 215px; */
-}
+
 .team 
 .list-social-network-team,
 .team-list{
     display: flex;
-    
+    justify-content: center;
 }
 
 .team-list{
-    
     margin-top: 50px;
     padding-left: 0;
     margin-bottom: 0;
+    
+
        
 }
 .team-link{
     width: 270px; 
     height: 420px;
     background-color: #ffffff; 
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
 }
 
 .team-link:not(:last-child){
     margin-right: 30px;
     
-}
-.title-styile, h4{
-    text-align: center;
 }
 .list-social-network-team{
     padding-left: 20px; 
@@ -613,15 +631,10 @@ footer{
 .link-customers:not(:last-child){
     margin-right: 30px;
 }
-.section-title-conteiner{ 
-    text-align: center;
-    margin-bottom: 0px;
-    margin-top: 0;
-}
+
 .customers-conteiner{
     padding-top: 95px;
-    padding-bottom: 95px;
-    
+    padding-bottom: 95px;  
 }
 
 .customers-img{
@@ -636,18 +649,12 @@ footer{
 }
 
 /* footer */
-footer{
-    padding-left:215px;
-    padding-top: 45px;
-    padding-right: 215px;
-    padding-bottom: 30px;
 
-}
 .side-footer-conteiner,
 .list-social-network,
 .sub-zone-conteiner{
     display: flex;
-
+    justify-content: space-between;
 }
 .addres-conteiner{
     margin-top: 0;
@@ -693,6 +700,7 @@ footer{
     margin-top: 0;
     margin-bottom: 0;
     
+    border-top: 1px solid #000;
 } 
 
 /* PORTFOLIO */
@@ -707,14 +715,17 @@ footer{
 }
 .list-button-menu{
     display: flex;
+    justify-content: center;
     
     margin-right: 0px;
     margin-bottom: 0px;
     margin-top: 0;
     padding-left: 0;
-    justify-content: space-between
+    /* justify-content: space-between; */
 }
-/* .link-buton-menu{} */
+/* .link-buton-menu{
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+} */
 
 /* Porfolio-zone */
 .portfolio-conteiner{
@@ -740,7 +751,11 @@ footer{
     margin-bottom: 30px;
     background-color: var(--primary-white-color);
     border: 1px solid #EEEEEE;
+
+    box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.4),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
+
 .portfolio-item:nth-child(3n){
     margin-right: 0px;
 }
@@ -759,14 +774,9 @@ footer{
     margin-top: -388px;
    
 }
-.portfolio-title, .portfolio-link{
-    padding-left: 10px;
-}
-
 .product-title{
     text-decoration: none;
 }
-
 .portfolio-text:hover,
 .portfolio-text:focus{
     color: var(--primary-white-color);
@@ -778,15 +788,13 @@ footer{
 .baner{
     background: #474858;  
     height:600px; 
-    max-width: 1600px;  
+    /* max-width: 1600px;   */
     margin-right: auto;
     margin-left: auto; 
-    background-image: linear-gradient(rgba(47, 48, 58, 0.8),
-    rgba(47, 48, 49, 0.8)),
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 49, 0.8)),
     url(../img/bg-img.jpg);
     /* background-image: linear-gradient(rgba(54, 54, 51, 0.9),
      rgba(33, 150, 243, 0.7)), */
-    
 }
 .link-up-mail::before{
     content:"";
@@ -803,15 +811,4 @@ footer{
     margin-right: 5px;
     background-image: url(../img/smartphone.svg);
     background-size: contain;
-}
-
-.footer-button::after{
-    content:"";
-    
-    width:24px;
-    height:24px;
-    margin-left:20px;
-    background-image:url(../img/footer-airplain.svg);
-    background-size: contain;
-    
 }
